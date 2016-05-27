@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeConvertor", "TimeConvertor\TimeConvertor.csproj", "{C081842B-156A-4F08-BD5F-F561AD2B37C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyProfessor", "LazyProfessor\LazyProfessor.csproj", "{6E44BAEB-799B-4C09-AE64-C6F6F570FBB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndeedTest1", "IndeedTest1\IndeedTest1.csproj", "{272DF743-31CC-48F1-A87C-84BC08640650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sherlock_And_The_Beast", "Sherlock_And_The_Beast\Sherlock_And_The_Beast.csproj", "{818D0D46-BCA7-4F28-8B25-6444960A1891}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C081842B-156A-4F08-BD5F-F561AD2B37C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C081842B-156A-4F08-BD5F-F561AD2B37C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C081842B-156A-4F08-BD5F-F561AD2B37C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C081842B-156A-4F08-BD5F-F561AD2B37C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E44BAEB-799B-4C09-AE64-C6F6F570FBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E44BAEB-799B-4C09-AE64-C6F6F570FBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E44BAEB-799B-4C09-AE64-C6F6F570FBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E44BAEB-799B-4C09-AE64-C6F6F570FBB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272DF743-31CC-48F1-A87C-84BC08640650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272DF743-31CC-48F1-A87C-84BC08640650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272DF743-31CC-48F1-A87C-84BC08640650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272DF743-31CC-48F1-A87C-84BC08640650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818D0D46-BCA7-4F28-8B25-6444960A1891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818D0D46-BCA7-4F28-8B25-6444960A1891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818D0D46-BCA7-4F28-8B25-6444960A1891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818D0D46-BCA7-4F28-8B25-6444960A1891}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
