@@ -59,6 +59,10 @@
       <Name>Sherlock_And_The_Beast</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="input01.txt" />
+    <Content Include="output01.txt" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

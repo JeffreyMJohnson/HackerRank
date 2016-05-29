@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sherlock_And_The_Beast;
@@ -8,6 +10,55 @@ namespace Sherlock_and_the_beast_tests
     [TestClass]
     public class UnitTest1
     {
+        private const string _filePath = "../../data/";
+
+        [TestMethod]
+        public void TestFromFile01()
+        {
+            string[] input = File.ReadAllLines(_filePath + "input01.txt");
+            string[] output = File.ReadAllLines(_filePath + "output01.txt");
+
+            int numTests = Int32.Parse(input[0]);
+
+            for (int i = 0; i < output.Length; i++)
+            {
+                string result = Program.LargestDecentNumber(Int32.Parse(input[i + 1]));
+                Assert.AreEqual(output[i], result, String.Format("N: {0}", input[i+1]));
+            }
+
+        }
+        [TestMethod]
+        public void TestFromFile03()
+        {
+            string[] input = File.ReadAllLines(_filePath + "input03.txt");
+            string[] output = File.ReadAllLines(_filePath + "output03.txt");
+
+            int numTests = Int32.Parse(input[0]);
+
+            for (int i = 0; i < output.Length; i++)
+            {
+                string result = Program.LargestDecentNumber2(Int32.Parse(input[i + 1]));
+                Assert.AreEqual(output[i], result, String.Format("N: {0}", input[i + 1]));
+            }
+
+        }
+
+        [TestMethod]
+        public void TestFromFile04()
+        {
+            string[] input = File.ReadAllLines(_filePath + "input04.txt");
+            string[] output = File.ReadAllLines(_filePath + "output04.txt");
+
+            int numTests = Int32.Parse(input[0]);
+
+            for (int i = 0; i < output.Length; i++)
+            {
+                string result = Program.LargestDecentNumber2(Int32.Parse(input[i + 1]));
+                Assert.AreEqual(output[i], result, String.Format("N: {0}", input[i + 1]));
+            }
+
+        }
+
         [TestMethod]
         public void TestIsDecentNumber()
         {

@@ -34,7 +34,7 @@ namespace Sherlock_And_The_Beast
 {
     public class Program
     {
-        
+
         public static bool IsDecentNumber(string testNum)
         {
             /*Its digits can only be 3's and/or 5's.
@@ -49,14 +49,55 @@ If there are more than one such number, we pick the largest one.*/
             return isOnlyFiveAndThree && numThreesDivisibleByFive && numFivesDivisibleByThree;
         }
 
+        public static string LargestDecentNumber2(int numDigits)
+        {
+            //set numFives to given number of digits value N
+            int numFives = numDigits;
+
+            //loop until numFives % 3 is zero
+            while (numFives % 3 != 0)
+            {
+                //reduce numFives by five (the number of threes)
+                numFives -= 5;
+            }
+
+            //if numFives % 3 not zero
+            if (numFives % 3 != 0)
+            {
+                //    return '-1'
+                return "-1";
+            }
+
+            string result = "";
+            //loop numFives times
+            for (int i = 0; i < numFives; i++)
+            {
+                //    add '5' to result string
+                result += '5';
+            }
+
+            //loop number of digits minus numFives times
+            int numThrees = numDigits - numFives;
+            for (int i = 0; i < numThrees; i++)
+            {
+                //    add '3' to result string
+                result += '3';
+            }
+
+            //return result string
+            return result;
+        }
+
         public static string LargestDecentNumber(int numDigits)
         {
-            
+
             int tailNum = numDigits % 15;
-            string tail = ""; //hotdog
+            string tail = "";
             switch (tailNum)
             {
                 case 0:
+                    tail = "";
+                    break;
                 case 1:
                 case 2:
                     goto case 13;
@@ -128,7 +169,7 @@ The T subsequent lines each contain an integer, N, detailing the number of digit
             for (int i = 0; i < numTests; i++)
             {
                 int testNum = int.Parse(Console.ReadLine());
-                Console.WriteLine(LargestDecentNumber(testNum));
+                Console.WriteLine(LargestDecentNumber2(testNum));
             }
 
 
