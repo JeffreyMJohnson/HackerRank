@@ -1,0 +1,34 @@
+
+32 byte aligned - 
+
+4 - unsigned int -> number of entities
+
+2 - unsigned short -> ID
+2 - unsigned short -> Type
+4 - float -> xPosition
+4 - float -> yPosition
+4 - float -> xForward
+4 - float -> yForward
+12 - byte -> padding
+
+set offset to 0;
+read 4 bytes and set unsigned int to Number of entites
+increase offset by 4
+loop number of entities times
+	read 2 bytes and set unsigned short to id
+	increase offset by 2
+	read 2 bytes and set unsigned short to type id
+	increase offset by 2
+	read 4 bytes and set float to xPosition
+	increase offset by 4
+	read 4 bytes and set float to yPosition
+	increase offset by 4
+	read 4 bytes and set float to xForward
+	increase offset by 4
+	read 4 bytes and set float to yForward
+	increase offset by 4
+	increase offset by 12
+
+
+
+
