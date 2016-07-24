@@ -61,6 +61,7 @@ node* insert(node* root, int value)
 			return root;
 		}
 	}
+	return root;
 }
 
 void main()
@@ -83,5 +84,7 @@ void main()
 		delete *it;
 	}
 	_livePointers.clear();
+
+	system("pause");
 }
 
